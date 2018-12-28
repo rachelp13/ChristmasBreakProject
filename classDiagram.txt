@@ -16,7 +16,7 @@ object: Student
 		Array of dates Student was absent from ClassSection.
 	overallGrade
 		Student overall grade in ClassSection.
-	id
+	studentId
 		Unique id for the Student.
 	assignmentGrades
 		Score for each assignment in ClassSection.
@@ -34,5 +34,5 @@ object: Assignment
 		Date of when Assignment is due.
 	name
 		Name of Assignment.
-	id
+	assignmentId
 		Unique id for the Assignment.
