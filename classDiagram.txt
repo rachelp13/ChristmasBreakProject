@@ -1,38 +1,49 @@
 object: ClassSection
-	studentArray
-		An array of students enrolled in the class.
-	assignmentArray
-		An array of assignments for the class.
-	name
-		Name of the ClassSection.
-	time
-		Time of the ClassSection.
-
+	Properties: 
+		studentArray
+			An array of students enrolled in the class.
+		assignmentArray
+			An array of assignments for the class.
+		name
+			Name of the ClassSection.
+		time
+			Time of the ClassSection.
+	Funtions:
+		printStudents()
+		addStudent(name, studentId)
+		removeStudent(studentId)
+		printAssignments()
+		addAssignment(weight, name, assignmentId, totalPossiblePoints)
+		removeAssignment(assignmentId)
    
 object: Student
-	name
-		Name of Student.
-	daysAbsent
-		Array of dates Student was absent from ClassSection.
-	overallGrade
-		Student overall grade in ClassSection.
-	studentId
-		Unique id for the Student.
-	assignmentGrades
-		Score for each assignment in ClassSection.
+	Properties:
+		name
+			Name of Student.
+		daysAbsent
+			Array of dates Student was absent from ClassSection.
+		overallGrade
+			Student overall grade in ClassSection.
+		studentId
+			Unique id for the Student.
+		assignmentGrades
+			Score for each assignment in ClassSection.
+	Functions:
+		
 
 object: Assignment
-	score
-		Fraction of points earned over possible points.
-	totalPossiblePoints
-		Total amount of points that can be earned on the assignment.
-	weight
-		(non graded, homework, test, quiz, in-class, projects)
-	creationDate
-		Date of when Assignment was created.
-	dueDate
-		Date of when Assignment is due.
-	name
-		Name of Assignment.
-	assignmentId
-		Unique id for the Assignment.
+	Properties:
+		score
+			Fraction of points earned over possible points.
+		totalPossiblePoints
+			Total amount of points that can be earned on the assignment.
+		weight
+			(non graded, homework, test, quiz, in-class, projects)
+		creationDate
+			Date of when Assignment was created.
+		dueDate
+			Date of when Assignment is due.
+		name
+			Name of Assignment.
+		assignmentId
+			Unique id for the Assignment.

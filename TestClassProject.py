@@ -13,6 +13,7 @@ class TestClassProject(unittest.TestCase):
         class2 = ClassSection("12345")
         self.assertEqual(class2.name, '12345')
 
+<<<<<<< Updated upstream
     def testClassSection_visualizeGrades(self):
         class1 = ClassSection("Class 1.1 @")
         for x in range(1, 40):
@@ -21,6 +22,39 @@ class TestClassProject(unittest.TestCase):
             class1.studentArray.append(newTestStudent)
         class1.visualizeGrades()
 
+=======
+    def testClassSection_printStudents(self):
+    	class1 = ClassSection("Class1")
+    	class1.addStudent("George", 123)
+    	class1.addStudent("Paul", 124)
+    	class1.addStudent("Ringo", 125)
+    	class1.addStudent("John", 126)
+    	class1.printStudents()
+
+    def testClassSection_addStudent(self):
+    	class1 = ClassSection("Class1")
+    	class1.addStudent("George", 123)
+    	self.assertEqual(class1.studentArray[0].name, "George")
+    	self.assertEqual(class1.studentArray[0].studentId, 123)
+    	self.assertEqual(len(class1.studentArray), 1)
+    	class1.addStudent("Paul", 122)
+    	self.assertEqual(class1.studentArray[1].name, "Paul")
+    	self.assertEqual(class1.studentArray[1].studentId, 122)
+    	self.assertEqual(len(class1.studentArray), 2)
+
+
+
+    def testClassSection_removeStudent(self):
+    	class2 = ClassSection("Class2")
+    	class2.addStudent("George", 123)
+    	class2.addStudent("Paul", 124)
+    	class2.addStudent("Ringo", 125)
+    	class2.addStudent("John", 126)
+    	class2.addStudent("Yoko", 122)
+    	self.assertEqual(len(class2.studentArray), 5)
+    	class2.removeStudent(122)
+    	self.assertEqual(len(class2.studentArray), 4)
+>>>>>>> Stashed changes
 
     def testStudent_Creation(self):
         student1 = Student("George", 12345)

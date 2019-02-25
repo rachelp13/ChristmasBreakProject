@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import numpy as np
 import matplotlib.pyplot as plt
 import helperFunctions 
@@ -35,5 +36,32 @@ class ClassSection:
 
         plt.show()
 
+=======
+from Student import Student
+
+class ClassSection:
+	studentArray = []
+	assignmentArray = []
+	name = ""
+	
+	def __init__(self, name):
+		self.name = name
+
+	def addStudent(self, name, studentId):
+		newStudent = Student(name, studentId)
+		self.studentArray.append(newStudent)
+
+	def printStudents(self):
+		for x in self.studentArray:
+			print(x)
+
+	def removeStudent(self, studentId):
+		studentRemoved = 0
+		for x in self.studentArray:
+			if studentId == x.studentId:
+				studentRemoved = x
+		self.studentArray.remove(studentRemoved)
+				
+>>>>>>> Stashed changes
 
 
